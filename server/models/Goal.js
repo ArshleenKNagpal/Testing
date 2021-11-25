@@ -12,13 +12,7 @@ const goalSchema = new Schema({
     required: true,
   },
   // saved goal id from GoogleGoals
-  goalId: {
-    type: String,
-    required: true,
-  },
-  link: {
-    type: String,
-  },
+ 
   name: {
     type: String,
     required: true,

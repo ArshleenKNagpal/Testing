@@ -9,20 +9,17 @@ type User {
     savedGoals: [Goal]
   }
 type Goal {
-    goalId: String
+    _id:ID
     authors: [String]
     description: String
-    title: String
-    image: String
-    link: String
+    name:String
 }
 input goalInput {
-    goalId: String
+  
     authors: [String]
     description: String
-    title: String
-    image: String
-    link: String
+    name: String
+    
 }
 type Auth {
     token: ID!
