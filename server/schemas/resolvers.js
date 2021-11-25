@@ -9,7 +9,10 @@ const resolvers = {
                 const userData = await User.findOne({ _id: context.user._id });
                 return userData;
             }
+            else
+            {
             throw new AuthenticationError('Error!Please login!');
+            }
           },
     },
 
